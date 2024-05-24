@@ -6,7 +6,7 @@ Designed to organize and manage tasks or lists of things to do. It typically inc
 
 - Custom hooks used to implement CRUD operations.
 - Edit or delete rows in place
-- On pressing "ENTER" it will register the Todo task.
+- On pressing "ENTER" key, it will create a Todo.
 
 ## Installation
 
