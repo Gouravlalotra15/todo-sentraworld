@@ -8,17 +8,9 @@ Designed to organize and manage tasks or lists of things to do. It typically inc
 - Edit or delete rows in place
 - On pressing "ENTER" it will register the Todo task.
 
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run dev
-```
-
 ## Installation
 
-Install my-project with npm
+To develop this project run
 
 ```bash
  // windows
@@ -26,6 +18,7 @@ npm install | npm run dev
 
 // linux
 npm install && npm run dev
+
 ```
 
 ## Demo
