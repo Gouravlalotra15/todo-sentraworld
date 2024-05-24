@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+button,
+a {
+  font-family: "DM Sans", sans-serif;
+}
+body {
+  background-image: url("https://todo-app.replit.app/assets/bg.ec602496.png");
+}
+.App {
+  width: 50vw;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+
+.App h1 {
+  margin-top: 20px;
+}
+
+.todos {
+  margin-top: 16px;
+  border: 2px solid black;
+  border-radius: 10px;
+  /* max-height: 60vh; */
+  padding: 1.5rem;
+  text-align: center;
+  /* overflow: auto; */
+}
+
+.inputTodoCtr {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.inputTodoCtr input {
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 0.4rem;
+  height: 2rem;
+  border: 1px #c0c0c0 solid;
+}
+
+.todosList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.todoItem {
+  display: flex;
+  border-radius: 0.25rem;
+  align-items: center;
+  padding: 0.5rem 0.7rem;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  background: none;
+}
+
+.actionsBtnCtr {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.btn.addNoteBtn {
+  display: flex;
+  align-items: center;
+  font-size: 1.75rem;
+  justify-content: center;
+}
