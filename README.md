@@ -1,8 +1,33 @@
-# React + Vite
+# Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Designed to organize and manage tasks or lists of things to do. It typically includes features for adding, editing, Deleting tasks as they are completed.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Custom hooks used to implement CRUD operations.
+- Edit or delete rows in place
+- On pressing "ENTER" it will register the Todo task.
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run dev
+```
+
+## Installation
+
+Install my-project with npm
+
+```bash
+ // windows
+npm install | npm run dev
+
+// linux
+npm install && npm run dev
+```
+
+## Demo
+
+https://todo-sentraworld.vercel.app/
