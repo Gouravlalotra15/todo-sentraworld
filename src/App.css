@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body,
 button,
 a {
@@ -105,8 +106,13 @@ body {
   .todos {
     width: 100%;
   }
-
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
   .App {
+    height: 100%;
     width: 80%;
   }
 }
