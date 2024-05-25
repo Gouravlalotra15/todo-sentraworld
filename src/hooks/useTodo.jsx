@@ -35,12 +35,16 @@ const useTodo = () => {
     newTodos[idx].isEditing = true;
     setTodos(newTodos);
   };
-
-  const updateTodoHandler = (idx, updateTodoInput) => {
-    if (updateTodoHandler.length === 0) return;
+  const cancelEditHandler = (idx) => {
     const newTodos = [...todos];
-
-    newTodos[idx].text = updateTodoInput;
+    newTodos[idx].isEditing = false;
+    setTodos(newTodos);
+  };
+  const updateTodoHandler = (idx, updateTodoInput) => {
+    const newTodos = [...todos];
+    if (updateTodoInput.length !== 0) {
+      newTodos[idx].text = updateTodoInput;
+    }
     newTodos[idx].isEditing = false;
     setTodos(newTodos);
   };
@@ -57,6 +61,7 @@ const useTodo = () => {
     inputTodo,
     isShowTodosList,
     editTodoHandler,
+    cancelEditHandler,
     onChangeHandler,
     onKeyDownHandler,
     updateTodoHandler,

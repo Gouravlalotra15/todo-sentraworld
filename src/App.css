@@ -10,6 +10,8 @@ a {
 }
 body {
   background-image: url("https://todo-app.replit.app/assets/bg.ec602496.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .App {
   width: 50vw;
@@ -56,14 +58,6 @@ body {
 }
 
 .todoItem {
-  /* display: flex;
-  border-radius: 0.25rem;
-  align-items: center;
-  padding: 0.5rem 0.7rem;
-  justify-content: space-between;
-  background-color: white; */
-  text-decoration: none;
-  list-style-type: none;
   display: flex;
   gap: 8px;
   align-items: center;
@@ -75,7 +69,15 @@ body {
   position: relative;
   border: 2px solid transparent;
 }
-
+.todoItem input {
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  height: 1.25rem;
+  padding: 8px 3px;
+}
+.todoItem h4 {
+  word-break: break-word;
+}
 .btn {
   border: none;
   cursor: pointer;
@@ -97,4 +99,14 @@ body {
   align-items: center;
   font-size: 1.75rem;
   justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .todos {
+    width: 100%;
+  }
+
+  .App {
+    width: 80%;
+  }
 }

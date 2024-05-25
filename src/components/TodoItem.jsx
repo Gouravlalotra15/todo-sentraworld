@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { MdDelete, MdEdit, MdSave } from "react-icons/md";
-import { GoBellFill } from "react-icons/go";
+import { MdDelete, MdEdit, MdSave, MdCancel } from "react-icons/md";
+
 import STATICS from "../constants";
 
 const TodoItem = ({
@@ -9,6 +9,7 @@ const TodoItem = ({
   editTodoHandler,
   updateTodoHandler,
   deleteTodoHandler,
+  cancelEditHandler,
 }) => {
   const { text, isEditing } = todo;
   const [updateTodoInput, setUpdateTodoInput] = useState("");
@@ -23,6 +24,7 @@ const TodoItem = ({
       {isEditing ? (
         <input
           type="text"
+          className="editInput"
           onKeyDown={onKeyDownHandler}
           value={updateTodoInput}
           placeholder={STATICS.PLACEHOLDER_MESSAGE}
@@ -44,9 +46,15 @@ const TodoItem = ({
             <MdEdit />
           </button>
         )}
-        <button className="btn" onClick={() => deleteTodoHandler(idx)}>
-          <MdDelete />
-        </button>
+        {isEditing ? (
+          <button className="btn" onClick={() => cancelEditHandler(idx)}>
+            <MdCancel />
+          </button>
+        ) : (
+          <button className="btn" onClick={() => deleteTodoHandler(idx)}>
+            <MdDelete />
+          </button>
+        )}
       </div>
     </div>
   );

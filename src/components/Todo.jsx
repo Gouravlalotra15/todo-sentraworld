@@ -15,6 +15,7 @@ const Todo = () => {
     onChangeHandler,
     onKeyDownHandler,
     createTodoHandler,
+    cancelEditHandler,
   } = useTodo();
 
   return (
@@ -42,6 +43,7 @@ const Todo = () => {
                 editTodoHandler={editTodoHandler}
                 updateTodoHandler={updateTodoHandler}
                 deleteTodoHandler={deleteTodoHandler}
+                cancelEditHandler={cancelEditHandler}
               />
             );
           })}
